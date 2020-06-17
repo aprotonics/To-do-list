@@ -19,6 +19,14 @@ ul {
     list-style: none;
 }
 
+.todo-headitem__text {
+    padding-left: 32px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 45px;
+    font-weight: bold;
+}
+
 .todo-item {
     font-size: 45px;
 }

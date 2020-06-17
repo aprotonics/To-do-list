@@ -2,6 +2,7 @@ let todoList = document.querySelector('.todo-list');
 let todoNewItem = document.querySelector('.todo-new-item');
 let todoAddButton = document.querySelector('.todo-add-button');
 let todoItems = document.querySelectorAll('.todo-item');  
+let todoHeadItemText = document.querySelector('.todo-headitem__text');
 
 // Adding item to list
 function addItem() {
@@ -88,4 +89,25 @@ getFulfilled();
 
 
 
+// Event Listener for sorting
+todoHeadItemText.addEventListener('click', function() {
+    // Getting sorted array of item names
+    todoItems = document.querySelectorAll('.todo-item');
+    console.log(todoItems);
+    let itemNames = [];
+    for (let i = 0; i < todoItems.length; i++) {
+        let todoItemText = todoItems[i].querySelector('.todo-item__text');
+        let itemName = todoItemText.textContent;
+        itemNames.push(itemName);
+    }
+    console.log(itemNames);
+    itemNames.sort();
+    console.log(itemNames);
 
+    // Adding sorted item names to list
+    for (let i = 0; i < itemNames.length; i++) {
+        let todoItemText = todoItems[i].querySelector('.todo-item__text');
+        todoItemText.textContent = itemNames[i];
+    }
+    console.log(todoItems);
+});
