@@ -1,0 +1,65 @@
+body {
+    font-size: 50px;
+    color: black;
+}
+
+header {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.todo-item {
+    font-size: 45px;
+}
+
+.todo-item:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+.todo-item__text {
+    display: inline;
+}
+
+.todo-item__item-delete {
+    display: none;
+}
+
+.todo-item__item-delete_show {
+    background-image: url(img/delete24.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.todo-item__item-delete_show:hover {
+    background-color: rgb(248, 247, 178);
+    border: 3px solid rgb(248, 247, 178);
+}
+
+.todo-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.todo-new-item {
+    width: 300px;
+    height: 25px;
+    font-size: 25px;
+}
+
+.todo-add-button {
+    height: 35px;
+    font-size: 25px;
+}

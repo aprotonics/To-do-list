@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>To-do-list</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">  
+            <h1 class="todo-head">To-do-list</h1>
+        </header>
+        <main>
+            <form method="GET" class="todo-form">
+                <div clas="todo-container">
+                    <ul class="todo-list">
+                        <li class="todo-item">
+                            <input class="todo-item__box" type="checkbox">
+                            <p class="todo-item__text">Проснуться</p>
+                            <span class="todo-item__item-delete"></span>
+                        </li>
+                        <li class="todo-item">
+                            <input class="todo-item__box" type="checkbox">
+                            <p class="todo-item__text">Поесть</p>
+                            <span class="todo-item__item-delete"></span>
+                        </li>
+                        <li class="todo-item">
+                            <input class="todo-item__box" type="checkbox">
+                            <p class="todo-item__text">Прогуляться</p>
+                            <span class="todo-item__item-delete"></span>
+                        </li>
+                    </ul>
+                    <div class=todo-bottom>
+                        <input class="todo-new-item" type="text" placeholder="Введите текст задачи">
+                        <input class="todo-add-button" type="submit" value="Добавить">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <script src="index.js"></script>
+        </footer>
+    </body>
+</html>
