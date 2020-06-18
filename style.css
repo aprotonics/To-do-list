@@ -9,6 +9,10 @@ header {
     margin-left: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
 main {
     width: 600px;
     margin-right: auto;
