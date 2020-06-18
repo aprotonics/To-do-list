@@ -40,7 +40,12 @@ ul {
 }
 
 .todo-item_attached::after {
-    content: url(img/attach24.png);
+    content: url(img/attach48.png);
+}
+
+.todo-item__box {
+    width: 30px;
+    height: 30px;
 }
 
 .todo-item__text {
@@ -52,15 +57,14 @@ ul {
 }
 
 .todo-item__item-delete_show {
-    background-image: url(img/delete24.png);
-    width: 24px;
-    height: 24px;
+    background-image: url(img/delete32.png);
+    width: 32px;
+    height: 32px;
     display: inline-block;
 }
 
 .todo-item__item-delete_show:hover {
-    background-color: rgb(248, 247, 178);
-    border: 3px solid rgb(248, 247, 178);
+    border: 3px solid rgb(240, 239, 239);
 }
 
 .todo-bottom {
