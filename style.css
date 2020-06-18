@@ -35,6 +35,14 @@ ul {
     background-color: rgb(240, 239, 239);
 }
 
+.todo-item_attached {
+    background-color: rgb(216, 213, 213);
+}
+
+.todo-item_attached::after {
+    content: url(img/attach24.png);
+}
+
 .todo-item__text {
     display: inline;
 }

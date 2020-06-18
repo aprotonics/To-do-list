@@ -68,10 +68,9 @@ function getSorted() {
     
     // Event Listener for sorting items
     todoHeadItemText.addEventListener('click', function() {
-
+        
         // Getting sorted array of item names
         let todoItems = document.querySelectorAll('.todo-item');
-        console.log(todoItems);
         let itemNames = [];
         for (let i = 0; i < todoItems.length; i++) {
             let todoItemText = todoItems[i].querySelector('.todo-item__text');
@@ -82,11 +81,9 @@ function getSorted() {
             case 0:
                 itemNames.sort((a, b) => a > b ? 1 : -1);
                 break;
-
             case 1:
                 itemNames.sort((a, b) => a > b ? -1 : 1);
                 break;
-
             case -1:
                 itemNames.sort((a, b) => a > b ? 1 : -1);
                 break;
@@ -102,11 +99,9 @@ function getSorted() {
             case 0:
                 sortedValue = 1;
                 break;
-
             case 1:
                 sortedValue = -1;
                 break;
-
             case -1:
                 sortedValue = 1;
                 break;
@@ -129,11 +124,23 @@ todoAddButton.addEventListener('click', function(evt) {
     addItem(); 
     getFulfilled();
     getDeleted();
+    getAttached();
 });
 
 // Getting sorted item list
 getSorted();
 
+// Getting attached item list
+function getAttached() {
+    let todoItems = document.querySelectorAll('.todo-item');  
+    let todoItem = todoItems[todoItems.length - 1];
 
+    // Event Listener for getting attached item
+    todoItem.addEventListener('dblclick', function() {
+        !todoItem.classList.contains('todo-item_attached') ?
+            todoItem.classList.add('todo-item_attached') :
+            todoItem.classList.remove('todo-item_attached');
+    });
+}
 
 
