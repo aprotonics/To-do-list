@@ -16,7 +16,8 @@ main {
 }
 
 form {
-    min-height: 300px;
+    margin-top: 50px;
+    min-height: 500px;
     background-color: rgb(209, 239, 192);
     border: 1px solid rgb(209, 222, 192);
     border-radius: 10px;
