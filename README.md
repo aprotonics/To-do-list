@@ -8,4 +8,4 @@
   <li>Возможность закрепления нужной задачи</li>
 </ul>
 
-https://aprotonics.github.io/To-do-list/
+
