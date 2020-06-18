@@ -1,6 +1,7 @@
 body {
     font-size: 50px;
     color: black;
+    background-color: rgb(229, 255, 213);
 }
 
 header {
@@ -20,28 +21,38 @@ main {
     margin-left: auto;
 }
 
+form {
+    background-color: rgb(209, 239, 192);
+    border: 1px solid rgb(209, 222, 192);
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 5px rgba(65, 95, 50, 0.5);
+}
+
 ul {
     list-style: none;
 }
 
 .todo-headitem__text {
-    padding-left: 32px;
-    margin-bottom: 15px;
+    padding-left: 50px;
     text-decoration: underline;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .todo-item {
     font-size: 45px;
+    padding: 5px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .todo-item:hover {
-    background-color: rgb(240, 239, 239);
+    background-color: rgb(191, 223, 176);
 }
 
 .todo-item_attached {
-    background-color: rgb(216, 213, 213);
+    background-color: rgb(167, 197, 152);
 }
 
 .todo-item_attached::after {
@@ -54,6 +65,7 @@ ul {
 }
 
 .todo-item__text {
+    font-size: 45px;
     display: inline;
 }
 
@@ -69,22 +81,25 @@ ul {
 }
 
 .todo-item__item-delete_show:hover {
-    border: 3px solid rgb(240, 239, 239);
+    border: 3px solid rgb(209, 239, 194);
 }
 
 .todo-bottom {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
+    padding-bottom: 30px;
 }
 
 .todo-new-item {
     width: 300px;
-    height: 25px;
+    height: 28px;
     font-size: 25px;
+    border-radius: 3px;
 }
 
 .todo-add-button {
     height: 35px;
     font-size: 25px;
+    border-radius: 3px;
 }
