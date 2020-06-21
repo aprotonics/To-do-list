@@ -41,6 +41,7 @@ ul {
     margin-right: 30px;
     margin-bottom: 15px;
     border-radius: 10px;
+    order: -2;
 }
 
 .todo-headitem__text {
@@ -68,6 +69,7 @@ ul {
 
 .todo-item_attached {
     background-color: rgb(167, 197, 152);
+    order: -1;
 }
 
 .todo-item_attached::after {
