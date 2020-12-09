@@ -152,9 +152,9 @@ todoAddButton.addEventListener('click', function(evt) {
     getDeleted();
     getAttached();
 });
-
+document.addEventListener('DOMContentLoaded', getSorted);
 // Getting sorted item list
-getSorted();
+//getSorted();
 
 
 
